@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useState, useEffect } from "react";
+
 function App() {
   const [message, setMessage] = useState<string>("");
   const [response, setResponse] = useState<string>("");
@@ -37,13 +37,6 @@ function App() {
         onChange={(e) => setMessage(e.target.value)}
         style={{ padding: "10px", width: "300px" }}
       />
-
-      <button
-        onClick={sendMessage}
-        style={{ padding: "10px 20px", marginLeft: "10px" }}
-      >
-        Send
-      </button>
 
       {response && (
         <div style={{ marginTop: "20px" }}>
