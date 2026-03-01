@@ -38,6 +38,13 @@ function App() {
         style={{ padding: "10px", width: "300px" }}
       />
 
+      <button
+        onClick={sendMessage}
+        style={{ padding: "10px 20px", marginLeft: "10px" }}
+      >
+        Send
+      </button>
+
       {response && (
         <div style={{ marginTop: "20px" }}>
           <strong>Saved Message:</strong> {response}
